@@ -1,0 +1,326 @@
+/* Variables  */
+:root {
+  --fuente: Georgia, "Times New Roman", Times, serif;
+  --fondoPrincipal: #fff6a8;
+}
+
+/* Head */
+header {
+  background-color: #623212;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+
+  h6 {
+    margin: auto;
+    font-size: 25px;
+    margin-bottom: 5 auto;
+    font-family: var(--fuente);
+  }
+  img {
+    display: block;
+    max-width: 100px;
+    height: auto;
+    margin: auto;
+  }
+}
+
+/* Barra de navegación */
+.navbar {
+  background-color: #c88f45; /* Color de fondo del navbar */
+  text-align: center; /* Alinea el texto al centro */
+  padding: 10px;
+}
+
+/* Pagina Princpipal */
+.principal {
+  background-color: #fff6a8;
+
+  h4 {
+    color: #623212;
+    text-align: center;
+    font-family: var(--fuente);
+  }
+  p {
+    text-align: center;
+    font-family: var(--fuente);
+  }
+  .custom-carousel {
+    width: 100%; /* Ajusta el ancho del carrousel */
+    max-width: 800px; /* Ancho máximo del carrousel */
+    margin: 0 auto; /* Centra el carrousel */
+    background-color: var(
+      --fondoPrincipal
+    ); /* Opcional: color de fondo del carrousel */
+  }
+  .custom-carousel .carousel-inner {
+    height: 475px; /* Ajusta la altura del carrousel */
+  }
+
+  .custom-carousel .carousel-inner img {
+    height: 475px; /* Ajusta la altura de las imágenes */
+    width: 100%; /* Ajusta el ancho de las imágenes */
+    object-fit: cover; /* Asegura que las imágenes llenen el espacio del carrousel */
+  }
+}
+
+/* Pie de pagina */
+footer {
+  background-color: #c88f45; /* Color de fondo del footer */
+  color: #fff;
+  padding: 20px 0;
+  max-width: auto; /* Ancho máximo del contenido del footer */
+  margin: 0 auto; /* Centrar el contenido del footer horizontalmente */
+  text-align: center;
+
+  h4 {
+    text-align: center;
+    font-family: var(--fuente);
+  }
+  img {
+    display: block; /* Hace que las imágenes se comporten como bloques, permitiendo ajustes más precisos de su tamaño */
+    max-width: 50px; /* Establece el ancho máximo de las imágenes a 30 píxeles */
+    height: auto; /* Mantiene la proporción de las imágenes al ajustar su tamaño */
+    margin: auto;
+  }
+}
+.menuFooter {
+  display: flex; /* Define el contenedor como un contenedor flex, permitiendo la alineación flexible de los elementos hijos */
+  justify-content: center; /* Centra los elementos hijos horizontalmente dentro del contenedor */
+  list-style: none; /* Elimina los estilos de lista predeterminados (por ejemplo, los puntos o números de una lista) */
+  padding: 0; /* Elimina el relleno predeterminado del contenedor */
+  margin: 10;
+
+  li {
+    margin: 0 10px;
+  }
+
+  img {
+    display: block; /* Hace que las imágenes se comporten como bloques, permitiendo ajustes más precisos de su tamaño */
+    max-width: 40px; /* Establece el ancho máximo de las imágenes a 30 píxeles */
+    height: auto; /* Mantiene la proporción de las imágenes al ajustar su tamaño */
+  }
+}
+
+/* Quienes somos */
+.quienes_somos {
+  background-color: #fff6a8;
+  padding: 40px;
+  justify-content: center;
+
+  .cards_quienes_somos {
+    justify-content: center;
+  }
+  .card-body {
+    background-color: #c88f45;
+    justify-content: center;
+  }
+
+  .titulo {
+    text-align: center;
+    font-family: var(--fuente);
+    color: #623212;
+  }
+
+  .tituloParrafo {
+    text-align: center;
+    font-family: var(--fuente);
+  }
+
+  .cardHistoria {
+    padding: 15px;
+    width: 525px; /* Ajusta este valor según tus necesidades */
+    margin: auto; /* Centra la card horizontalmente */
+  }
+
+  .imagenHistoria {
+    max-width: 492px;
+    margin: auto;
+    object-fit: cover;
+  }
+}
+
+/* Acerca de */
+.acerca_de {
+  background-color: #fff6a8;
+  padding: 40px;
+  justify-content: center;
+
+  .titulo {
+    text-align: center;
+    font-family: var(--fuente);
+    color: #623212;
+  }
+  .parrafo{
+    text-align: center;
+    font-family: var(--fuente);
+  }
+  
+  .col {
+    justify-content: center;
+  }
+
+  .card{
+    background-color: #c88f45;
+  }
+  .card-title{
+    font-size-adjust: var(--fuente) !important;
+  }
+  .card-text{
+    font-size-adjust: var(--fuente) !important;
+  }
+
+  .descripcion{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    img{
+      width: 25px;
+      height: auto;
+
+    }
+  }
+}
+
+/* login */
+.login {
+  background-color: #fff6a8;
+  padding: 40px;
+  justify-content: center;
+
+  .titulo {
+    text-align: center;
+    font-family: var(--fuente);
+    color: #623212;
+    padding: 10px;
+    bottom: 10px;
+  }
+
+  .registro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+  }
+
+  .botonRegis {
+    margin-top: 10px; /* Añade un pequeño margen superior si es necesario */
+  }
+
+  .botonRegis a {
+    display: inline-block;
+  }
+
+  .form-control {
+  max-width: 100%; /* Asegura que el ancho máximo de los campos de entrada no exceda su contenedor */
+  }
+
+  .w-75 {
+  width: 50% !important; /* Ajusta el ancho de los contenedores de los campos de entrada */
+  }
+
+  .mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+  }
+}
+
+
+        /* Registro */
+.registro{
+  background-color: #fff6a8;
+  padding: 40px;
+  justify-content: center;
+
+   .botonRegis {
+    margin-top: 10px; /* Añade un pequeño margen superior si es necesario */
+  }
+
+  .botonRegis a {
+    display: inline-block;
+  }
+
+  .form-control {
+  max-width: 100%; /* Asegura que el ancho máximo de los campos de entrada no exceda su contenedor */
+  }
+
+  .w-75 {
+  width: 60% !important; /* Ajusta el ancho de los contenedores de los campos de entrada */
+  }
+
+  .mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+  }
+}
+
+.usuario_logueado{
+  background-color: #fff6a8;
+  padding: 40px;
+  justify-content: center;
+}
+
+.panelAdmin {
+  background-color: #fff6a8;
+  padding: 40px;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  
+  .container {
+  display: flex;
+  justify-content: center; /* Centra el contenido dentro del contenedor */
+  align-items: center;
+  }
+  
+  .card {
+  max-width: 100%; /* Permite que el card sea responsive */
+  width: 100%; /* Hace que el card ocupe todo el ancho posible */
+  max-width: 500px; /* Limita el ancho máximo del card */
+  margin: 0 auto; /* Centra el card horizontalmente */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  } 
+  .card-body {
+  background-color: #c88f45;
+  }
+
+  .card img {
+  width: 100%; /* Hace que la imagen sea responsive */
+  height: auto;
+  display: block;
+  }
+}
+
+
+
+
+
+
+
+.panelUsuario{
+  background-color: #fff6a8;
+  padding: 40px;
+  justify-content: center;
+
+  
+  .card{
+    justify-content: center;
+    max-width: 40px;
+    height: auto;
+    img {
+    display: block;
+    max-width: 40px; 
+    height: auto;
+  }
+
+  }
+
+  .card-title{
+    font-size-adjust: var(--fuente) !important;
+    justify-content: center;
+  }
+  .card-text{
+    font-size-adjust: var(--fuente) !important;
+    justify-content: center;
+  }
+}
+
+
